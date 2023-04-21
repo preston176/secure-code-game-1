@@ -2,6 +2,7 @@ import unittest
 import os
 import code as c
 
+
 class TestTaxPayer(unittest.TestCase):
 
     # Example 1 - path traversal exploited on get_prof_picture
@@ -29,6 +30,7 @@ class TestTaxPayer(unittest.TestCase):
         output = test_obj.get_tax_form_attachment(input)
 
         self.assertIsNone(output)
+
 
 if __name__ == '__main__':
     unittest.main()
